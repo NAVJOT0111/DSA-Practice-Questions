@@ -43,10 +43,11 @@ void printAns(vector <int> &ans){
 }
 
 int main(){
-    vector <int> adj[5];
+    vector <int> adj[5];    // not a standard in c++ , In C++, array size must be compile-time constant. int vis[V]; works in GCC as an extension, but not in standard C++.
+    //  vector<int> vis(V, 0);
 
     addEdge(adj, 0 ,2);
-    addEdge(adj, 2 ,4)
+    addEdge(adj, 2 ,4);
     addEdge(adj, 0 ,1);
     addEdge(adj, 0 ,3);
 
